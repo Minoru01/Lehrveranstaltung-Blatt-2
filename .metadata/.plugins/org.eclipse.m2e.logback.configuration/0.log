@@ -1,0 +1,32 @@
+2017-10-23 17:13:40,950 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-10-23 17:29:17,481 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-10-23 17:49:26,615 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1219980ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-23 17:49:26,819 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.4.5.v20170502
+2017-10-23 17:49:26,836 [Start Help Server] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2017-10-23 17:49:26,836 [Start Help Server] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2017-10-23 17:49:26,839 [Start Help Server] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2017-10-23 17:49:26,863 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@77ad02ab{/help,null,AVAILABLE}
+2017-10-23 17:49:26,881 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3874ac74{HTTP/1.1,[http/1.1]}{127.0.0.1:58109}
+2017-10-23 17:49:26,881 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1220247ms
+2017-10-23 17:50:54,868 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@3874ac74{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-10-23 17:50:54,868 [Stop Help Server] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2017-10-23 17:50:54,955 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@77ad02ab{/help,null,UNAVAILABLE}
+2017-10-23 17:51:02,595 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-10-23 18:06:33,462 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-10-23 18:47:34,873 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @17499ms
+2017-10-23 18:47:34,984 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-10-23 18:47:35,021 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@636d7bbb{/help,null,AVAILABLE}
+2017-10-23 18:47:35,046 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@44e2eda{HTTP/1.1,[http/1.1]}{127.0.0.1:50653}
+2017-10-23 18:47:35,046 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @17676ms
+2017-10-23 18:49:03,866 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@44e2eda{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-10-23 18:49:03,879 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@636d7bbb{/help,null,UNAVAILABLE}
+2017-10-27 10:26:12,078 [Worker-5] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-11-06 11:29:49,155 [Worker-5] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-11-07 15:07:56,125 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-11-07 15:13:17,196 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+2017-11-11 14:37:42,963 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-11-11 14:37:45,751 [Worker-2] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+2017-11-11 14:53:05,276 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-11-11 14:53:07,525 [Worker-4] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+2017-11-21 14:28:20,890 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-11-21 14:28:23,203 [Worker-0] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden

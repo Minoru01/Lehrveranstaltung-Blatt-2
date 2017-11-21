@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Attack on Titan</string>
+    <string name="title_activity_eintraege">EintraegeActivity</string>
+    <string name="title_activity_log">LogActivity</string>
+</resources>
