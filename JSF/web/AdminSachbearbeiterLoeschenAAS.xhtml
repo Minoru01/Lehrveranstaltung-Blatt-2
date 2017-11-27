@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:F="http://java.sun.com/jsf/core">
+<h:head>
+    <title>Sachbearbeiter Löschen</title>
+</h:head>
+<h:body style="font-family: Arial">
+    <div style="border-radius: 5px; background: lightblue; float: left; display: inline-block; margin: 0 auto; ">
+        <h:form id="Eingabefeld">
+            <h:panelGrid columns="2" rows="3">
+                <f:facet name="header">
+                    <div align="left">Sachbearbeiter Löschen</div>
+                    <br></br>
+                </f:facet>
+                <h:panelGroup>
+                    <h:selectOneMenu value="#{adminSachbearbeiterLoeschenAAS.name}">
+                        <f:selectItems value="#{adminSachbearbeiterLoeschenAAS.comboboxItems}"></f:selectItems>
+                        <f:ajax process="@this"
+                                render=":Eingabefeld:username :Eingabefeld:passwort :Eingabefeld:berechtigung"></f:ajax>
+                    </h:selectOneMenu>
+                </h:panelGroup>
+                <h:panelGroup>
+                    <ui:include src="WEB-INF/includes/BenutzernamePasswort.xhtml">
+                        <ui:param name="name" value="#{adminSachbearbeiterLoeschenAAS.name}"></ui:param>
+                        <ui:param name="passwort" value="#{adminSachbearbeiterLoeschenAAS.passwort}"></ui:param>
+                        <ui:param name="read" value="true"> </ui:param>
+                        <ui:param name="readd" value="true"> </ui:param>
+                        <ui:param name="req" value="true"></ui:param>
+                    </ui:include>
+                    <ui:include src="WEB-INF/includes/Berechtigung.xhtml">
+                        <ui:param name="berechtigung" value="#{adminSachbearbeiterLoeschenAAS.berechtigung}"></ui:param>
+                        <ui:param name="cla" value="#{adminSachbearbeiterLoeschenAAS}"></ui:param>
+                        <ui:param name="met" value="berechtigung"></ui:param>
+                        <ui:param name="read" value="true"></ui:param>
+                        <ui:param name="req" value="true"></ui:param>
+                    </ui:include>
+                </h:panelGroup>
+                <f:facet name="footer">
+                    <h:panelGrid columns="2" rows="2"  align="center">
+                        <h:panelGroup>
+                            <ui:include src="WEB-INF/includes/Button.xhtml">
+                                <ui:param name="id" value="Abbrechen"></ui:param>
+                                <ui:param name="text" value="Abbrechen"></ui:param>
+                                <ui:param name="cl" value="#{adminSachbearbeiterLoeschenAAS}"></ui:param>
+                                <ui:param name="meth" value="zurueck"></ui:param>
+                            </ui:include>
+                        </h:panelGroup>
+                        <h:panelGroup>
+                            <ui:include src="WEB-INF/includes/Button.xhtml">
+                                <ui:param name="id" value="OK"></ui:param>
+                                <ui:param name="text" value="OK"></ui:param>
+                                <ui:param name="cl" value="#{adminSachbearbeiterLoeschenAAS}"></ui:param>
+                                <ui:param name="meth" value="loeschen"></ui:param>
+                            </ui:include>
+                        </h:panelGroup>
+                    </h:panelGrid>
+                </f:facet>
+            </h:panelGrid>
+            <h:messages></h:messages>
+        </h:form>
+    </div>
+</h:body>
+</html>

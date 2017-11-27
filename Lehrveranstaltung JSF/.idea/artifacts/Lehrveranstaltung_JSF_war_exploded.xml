@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Lehrveranstaltung JSF:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lehrveranstaltung_JSF_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Lehrveranstaltung JSF/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Lehrveranstaltung JSF" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="PrimeFaces-6.1" />
+          <element id="library" level="project" name="Richfaces-4.2.2" />
+          <element id="library" level="project" name="OpenFaces-3.0" />
+          <element id="library" level="project" name="Mojarra-2.2.1" />
+          <element id="library" level="project" name="IceFaces-3.1.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

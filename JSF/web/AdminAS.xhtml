@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Sachbearbeiter Verwaltung</title>
+</h:head>
+<h:body style="font-family: Arial">
+    <div style="border-radius: 5px; background: lightblue; float: left; display: inline-block; margin: 0 auto; ">
+        <h:form>
+            <h:panelGrid columns="1">
+                <f:facet name="header">
+                    <h2>Optionen:</h2>
+                </f:facet>
+                <h:panelGroup>
+                    <h:outputText id="name1" value="Willkommen #{adminK.name}, Sie sind als Administator angemeldet."></h:outputText><br/>
+                </h:panelGroup>
+                <h:panelGroup>
+                    <h:panelGrid columns="3">
+                        <h:panelGroup>
+                            <h:commandButton id="erzeugenbtn" value="Erzeugen" action="AdminSachbearbeiterErzeugenAAS"></h:commandButton>
+                        </h:panelGroup>
+                        <h:panelGroup>
+                            <h:commandButton id="editierenbtn" value="Editeren" action="AdminSachbearbeiterEditierenASS"></h:commandButton>
+                        </h:panelGroup>
+                        <h:panelGroup>
+                            <h:commandButton id="löschenbtn" value="Löschen" action="AdminSachbearbeiterLoeschenAAS"></h:commandButton>
+                        </h:panelGroup>
+                    </h:panelGrid>
+                </h:panelGroup>
+                <h:panelGroup>
+                    <h:commandButton id="abmeldenbtn" value="Zurück" action="Login" ></h:commandButton>
+                </h:panelGroup>
+            </h:panelGrid>
+        </h:form>
+    </div>
+</h:body>
+</html>

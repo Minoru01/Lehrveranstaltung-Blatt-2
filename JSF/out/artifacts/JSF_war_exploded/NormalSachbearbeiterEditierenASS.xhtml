@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Sachbearbeiter Editieren</title>
+</h:head>
+<h:body style="font-family: Arial">
+    <div style="border-radius: 5px; background: lightblue; float: left; display: inline-block; margin: 0 auto; ">
+        <h:form id="Eingabefeld">
+            <h:panelGrid columns="2" rows="3">
+                <f:facet name="header">
+                    <div align="left">Sachbearbeiter Editieren</div>
+                    <br></br>
+                </f:facet>
+                <h:panelGroup>
+                    <h:selectOneMenu value="#{sachbearbeiterEditierenAS.altername}">
+                        <f:selectItems value="#{sachbearbeiterEditierenAS.comboboxItems}"></f:selectItems>
+                        <f:ajax process="@this" render=":Eingabefeld:username :Eingabefeld:passwort"></f:ajax>
+                    </h:selectOneMenu>
+                </h:panelGroup>
+                <h:panelGroup>
+                    <ui:include src="WEB-INF/includes/BenutzernamePasswort.xhtml">
+                        <ui:param name="name" value="#{sachbearbeiterEditierenAS.name}"></ui:param>
+                        <ui:param name="passwort" value="#{sachbearbeiterEditierenAS.passwort}"></ui:param>
+                    </ui:include>
+                </h:panelGroup>
+                <f:facet name="footer">
+                    <h:panelGrid columns="2" rows="1">
+                        <h:panelGroup>
+                            <ui:include src="WEB-INF/includes/Button.xhtml">
+                                <ui:param name="id" value="OK"></ui:param>
+                                <ui:param name="text" value="OK"></ui:param>
+                                <ui:param name="cl" value="#{sachbearbeiterEditierenAS}"></ui:param>
+                                <ui:param name="meth" value="modifizierenNormal"></ui:param>
+                            </ui:include>
+                        </h:panelGroup>
+                        <h:panelGroup>
+                            <ui:include src="WEB-INF/includes/Button.xhtml">
+                                <ui:param name="id" value="Abbrechen"></ui:param>
+                                <ui:param name="text" value="Abbrechen"></ui:param>
+                                <ui:param name="cl" value="#{sachbearbeiterEditierenAS}"></ui:param>
+                                <ui:param name="meth" value="zurueckNormal"></ui:param>
+                            </ui:include>
+                        </h:panelGroup>
+                    </h:panelGrid>
+                </f:facet>
+            </h:panelGrid>
+            <h:messages></h:messages>
+        </h:form>
+    </div>
+</h:body>
+</html>

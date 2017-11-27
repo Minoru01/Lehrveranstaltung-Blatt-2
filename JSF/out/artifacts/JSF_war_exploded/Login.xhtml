@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
+<h:head>
+    <title>Login</title>
+</h:head>
+<h:body style="font-family: Arial;">
+    <div style="border-radius: 5px; background: lightblue; float: left; display: inline-block; margin: 0 auto; ">
+        <h:form id="input">
+            <h:panelGrid columns="1">
+                <f:facet name="header">
+                    <h1>Login</h1>
+                </f:facet>
+                <h:panelGroup>
+                    <ui:include src="WEB-INF/includes/BenutzernamePasswort.xhtml">
+                        <c:set var="name" value="#{loginAS.name}"></c:set>
+                        <c:set var="passwort" value="#{loginAS.passwort}"></c:set>
+                    </ui:include>
+                </h:panelGroup>
+                <h:panelGroup>
+                    <ui:include src="WEB-INF/includes/Berechtigung.xhtml">
+                        <c:set var="berechtigung" value="#{loginAS.berechtigung}">
+                            <ui:param name="cla" value="#{loginAS}"></ui:param>
+                            <ui:param name="met" value="getBerechtigung()"></ui:param>
+                        </c:set>
+                    </ui:include>
+                </h:panelGroup>
+                <f:facet name="footer">
+                    <ui:include src="WEB-INF/includes/Button.xhtml">
+                        <ui:param name="id" value="ok"></ui:param>
+                        <ui:param name="text" value="OK"></ui:param>
+                        <ui:param name="cl" value="#{loginAS}"></ui:param>
+                        <ui:param name="meth" value="login"></ui:param>
+                    </ui:include>
+                </f:facet>
+            </h:panelGrid>
+            <h:messages></h:messages>
+        </h:form>
+    </div>
+
+
+</h:body>
+</html>
